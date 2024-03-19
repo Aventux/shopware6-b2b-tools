@@ -1,0 +1,40 @@
+{
+    "name": "aventux/b2b-tools",
+    "description": "Aventux B2B Tools",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Aventux"
+        }
+    ],
+    "require": {
+        "shopware/core": "^6.4 || ^6.5 || ^6.6"
+    },
+    "extra": {
+        "shopware-plugin-class": "AventuxB2BTools\\AventuxB2BTools",
+        "copyright": "(c) by Aventux",
+        "label": {
+            "de-DE": "B2B Tools",
+            "en-GB": "B2B Tools"
+        },
+        "description": {
+            "de-DE": "B2B Tools",
+            "en-GB": "B2B Tools"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://store.shopware.com/aventux.html",
+            "en-GB": "https://store.shopware.com/en/aventux.html"
+        },
+        "supportLink": {
+            "de-DE": "https://store.shopware.com/aventux.html",
+            "en-GB": "https://store.shopware.com/en/aventux.html"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "AventuxB2BTools\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/component/buy-widget/buy-widget.html.twig' %}
+
+{% block buy_widget_price %}
+    {% if context.customer and not context.customer.guest %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block buy_widget_buy_form %}
+    {% if context.customer and not context.customer.guest %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
