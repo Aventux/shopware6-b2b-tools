@@ -2,11 +2,20 @@
     "name": "aventux/shopware6-b2b-tools",
     "description": "Aventux B2B Tools",
     "type": "shopware-platform-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "proprietary",
     "authors": [
         {
-            "name": "Aventux"
+            "name": "Tobias Poeschl",
+            "email": "kontakt@aventux.com",
+            "homepage": "https://aventux.com",
+            "role": "CEO/Developer"
+        },
+        {
+            "name": "Hung Mac",
+            "email": "h.mac@aventux.dev",
+            "homepage": "https://aventux.com",
+            "role": "Developer"
         }
     ],
     "require": {

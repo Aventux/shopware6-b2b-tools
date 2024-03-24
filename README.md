@@ -13,7 +13,7 @@ B2BTools is a powerful Shopware 6 plugin designed specifically for B2B e-commerc
 
 -  **Hide Prices for Non-Logged-In Users:** Ensures that pricing information is only accessible to authenticated users, adding an exclusive aspect to your B2B platform.
 
--  **Login After Approval (In Progress):** A feature currently under development that will allow store owners to approve customer accounts before they can log in, enhancing security and exclusivity.
+-  **Login After Approval:** A feature currently under development that will allow store owners to approve customer accounts before they can log in, enhancing security and exclusivity.
 
   
 
