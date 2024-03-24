@@ -73,4 +73,8 @@ class Migration1711294376CreateCustomerApprovedField extends MigrationStep
             'allow_cart_expose' => 0,
         ]);
     }
+
+    public function updateDestructive(Connection $connection): void
+    {
+    }
 }
