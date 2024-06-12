@@ -1,5 +1,8 @@
 {
   "account": {
-    "customerHasNotBeenApproved": "Ihr Kundenkonto wurde noch nicht genehmigt!"
+    "customerHasNotBeenApproved": "Ihr Kundenkonto wurde noch nicht genehmigt!",
+    "customerNeedApprove": "Ihr Kundenkonto muss genehmigt werden!",
+    "commercialRegisterCode": "Handelsregisternummer",
+    "commercialRegisterCodePlaceHolder": "Geben Sie Ihre Handelsregisternummer ein"
   }
 }
