@@ -1,5 +1,8 @@
 {
   "account": {
-    "customerHasNotBeenApproved": "Your customer account has not been approved yet!"
+    "customerHasNotBeenApproved": "Your customer account has not been approved yet!",
+    "customerNeedApprove": "Your account needs to be approved by the administrator!",
+    "commercialRegisterCode": "Commercial Register Code",
+    "commercialRegisterCodePlaceHolder": "Enter your commercial register code..."
   }
 }

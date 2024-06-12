@@ -1,0 +1,37 @@
+{% sw_extends '@Storefront/storefront/component/account/register.html.twig' %}
+
+{% block component_account_register_company_fields %}
+    <div class="row g-2">
+        <div class="form-group col-sm-6">
+            {% block component_account_register_personal_commercial_register_code %}
+                {% block component_account_register_personal_commercial_register_code_label %}
+                    <label class="form-label"
+                           for="commercialRegisterCode">
+                        {{ "account.commercialRegisterCode"|trans|sw_sanitize }}{{ "general.required"|trans|sw_sanitize }}
+                    </label>
+                {% endblock %}
+
+                {% block component_account_register_personal_commercial_register_code_input %}
+                    <input type="text"
+                           class="form-control{% if formViolations.getViolations('/customFields[aventux_b2b_tools_customer_che_code]') is not empty %} is-invalid{% endif %}"
+                           autocomplete="section-personal customFields[aventux_b2b_tools_customer_che_code]"
+                           id="customFields[aventux_b2b_tools_customer_che_code]"
+                           placeholder="{{ "account.commercialRegisterCodePlaceHolder"|trans|striptags }}"
+                           name="customFields[aventux_b2b_tools_customer_che_code]"
+                           value="{{ data.get('customFields[aventux_b2b_tools_customer_che_code]') }}"
+                           required="required">
+                {% endblock %}
+
+                {% block component_account_register_personal_commercial_register_code_input_error %}
+                    {% if formViolations.getViolations('/customFields[aventux_b2b_tools_customer_che_code]') is not empty %}
+                        {% sw_include '@Storefront/storefront/utilities/form-violation.html.twig' with {
+                            violationPath: '/customFields[aventux_b2b_tools_customer_che_code]'
+                        } %}
+                    {% endif %}
+                {% endblock %}
+            {% endblock %}
+        </div>
+    </div>
+
+    {{ parent() }}
+{% endblock %}
