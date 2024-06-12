@@ -2,7 +2,7 @@
     "name": "aventux/shopware6-b2b-tools",
     "description": "Aventux B2B Tools",
     "type": "shopware-platform-plugin",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "proprietary",
     "authors": [
         {

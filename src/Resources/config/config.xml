@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Sign-up configuration</title>
+        <title lang="de-DE">Anmeldekonfiguration</title>
+
+        <input-field type="bool">
+            <name>showCommercialRegisterCodeBusinessAccount</name>
+            <label>Show commercial register code when it's business account</label>
+            <label lang="de-DE">Handelsregisternummer anzeigen, wenn es sich um ein Geschäftskonto handelt</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+    </card>
+</config>
