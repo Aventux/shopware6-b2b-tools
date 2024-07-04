@@ -15,6 +15,13 @@
         </input-field>
 
         <input-field type="bool">
+            <name>hidePercentage</name>
+            <label>Hide percentage</label>
+            <label lang="de-DE">Prozentsatz ausblenden</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+
+        <input-field type="bool">
             <name>hideListPrice</name>
             <label>Hide list price</label>
             <label lang="de-DE">Ausblenden Streichpreis</label>

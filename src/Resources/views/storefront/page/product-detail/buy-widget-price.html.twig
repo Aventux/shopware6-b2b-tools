@@ -3,12 +3,24 @@
 {% block page_product_detail_was_price_wrapper %}
     {% if config('AventuxB2BTools.config.hideListPrice') %}
     {% else %}
-        {{ parent() }}
+        {% if config('AventuxB2BTools.config.hidePercentage') %}
+            <span class="product-detail-list-price-wrapper">
+                {% if beforeListPriceSnippetExists %}{{"listing.beforeListPrice"|trans|trim}}{% endif %}
+
+                <span{% if not (afterListPriceSnippetExists or beforeListPriceSnippetExists) %} class="list-price-price"{% endif %}>{{ listPrice.price|currency }}{{ "general.star"|trans|sw_sanitize }}</span>
+
+                {% if afterListPriceSnippetExists %}
+                    {{"listing.afterListPrice"|trans|trim}}
+                {% endif %}
+            </span>
+        {% else %}
+            {{ parent() }}
+        {% endif %}
     {% endif %}
 {% endblock %}
 
 {% block page_product_detail_was_price_badge %}
-    {% if config('AventuxB2BTools.config.hideListPrice') %}
+    {% if config('AventuxB2BTools.config.hidePercentage') %}
     {% else %}
         {{ parent() }}
     {% endif %}
