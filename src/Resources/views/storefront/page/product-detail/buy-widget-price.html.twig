@@ -1,0 +1,15 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/buy-widget-price.html.twig' %}
+
+{% block page_product_detail_was_price_wrapper %}
+    {% if config('AventuxB2BTools.config.hideListPrice') %}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block page_product_detail_was_price_badge %}
+    {% if config('AventuxB2BTools.config.hideListPrice') %}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
