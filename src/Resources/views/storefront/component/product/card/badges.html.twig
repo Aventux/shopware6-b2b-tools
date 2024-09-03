@@ -2,6 +2,9 @@
 
 {% block component_product_badges_discount %}
     {% if context.customer and not context.customer.guest %}
-        {{ parent() }}
+        {% if config('AventuxB2BTools.config.hidePercentage') %}
+        {% else %}
+            {{ parent() }}
+        {% endif %}
     {% endif %}
 {% endblock %}
